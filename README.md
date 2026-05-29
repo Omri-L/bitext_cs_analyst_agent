@@ -441,3 +441,7 @@ bitext_cs_analyst_agent/
     ├── runner.py        # shared agent-interaction layer used by CLI + Streamlit
     └── graph.py         # graph assembly + SQLite checkpointer
 ```
+
+## Project notes
+This project is designed for educational purposes - done for Nebius Academy "AI Performance Engineering" course, 
+and it demonstrates a multi-turn ReAct agent with LangGraph, with persistent memory and a custom routing nodes.
