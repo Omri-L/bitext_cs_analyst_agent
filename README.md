@@ -54,8 +54,8 @@ in-process (no manual download needed).
 ### 2. Clone, create a virtual environment, install dependencies
 
 ```bash
-git clone <your-repo-url>
-cd cs-analyst-agent
+git clone https://github.com/Omri-L/bitext_cs_analyst_agent.git
+cd bitext_cs_analyst_agent
 
 # create and activate a virtual environment
 python -m venv venv
@@ -415,25 +415,10 @@ async def main():
 asyncio.run(main())
 ```
 
-### Use it from Claude Desktop
-
-Add this to `claude_desktop_config.json`:
-
-```json
-{
-  "mcpServers": {
-    "customer-service-analyst": {
-      "command": "python",
-      "args": ["/absolute/path/to/cs-analyst-agent/mcp_server.py"]
-    }
-  }
-}
-```
-
 ## Project structure
 
 ```
-cs-analyst-agent/
+bitext_cs_analyst_agent/
 ├── main.py              # interactive CLI entrypoint
 ├── streamlit_app.py     # Streamlit chat UI
 ├── mcp_server.py        # FastMCP server
